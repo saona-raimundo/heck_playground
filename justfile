@@ -8,4 +8,9 @@ serve:
 # Publish to GitHub pages
 publish:
 	trunk build
+	try { rm --recursive docs }
 	cp --recursive dist docs
+
+clean:
+	cargo clean
+	trunk clean
