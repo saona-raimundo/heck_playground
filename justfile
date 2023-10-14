@@ -7,9 +7,10 @@ serve:
 
 # Publish to GitHub pages
 publish:
-	trunk build
+	trunk build --release
 	try { rm --recursive docs }
 	cp --recursive dist docs
+	open docs\index.html | str replace --all `href="/` `href="./` | str replace --all `from '/` `from './` | str replace --all `'/heck_playground` `'./heck_playground` | save docs\index.html --force  
 
 clean:
 	cargo clean
