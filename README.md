@@ -1,10 +1,13 @@
 # heck playground
 
-Playground for case conversion using the [heck](https://crates.io/crates/heck/) crate.
+[Playground](https://saona-raimundo.github.io/heck_playground/) for case conversion using the [heck](https://crates.io/crates/heck/) crate.
 
 ## Development
 
-We use Leptos and Trunk.
+- Framework: leptos. Reactive 
+- Bundler: trunk. WASM web application bundler
+- Runner: just. Command runner
+- Shell: nushell. 
 
 ### Folders
 - `dist` is the target of trunk
