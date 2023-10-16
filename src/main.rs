@@ -108,6 +108,22 @@ fn App() -> impl IntoView {
 
 		        <button
 		            on:click=move |_| {
+		                set_output.set(input.get().to_title_case().to_lowercase());
+		            }
+		        >
+		            "lower case"
+		        </button>  
+
+		        <button
+		            on:click=move |_| {
+		                set_output.set(input.get().to_title_case().to_uppercase());
+		            }
+		        >
+		            "UPPER CASE"
+		        </button>  
+
+		        <button
+		            on:click=move |_| {
 		                set_output.set(input.get().to_shouty_kebab_case());
 		            }
 		        >

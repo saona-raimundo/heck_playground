@@ -11,7 +11,7 @@ publish:
 	try { rm --recursive docs }
 	cp --recursive dist docs
 	# Replace relative paths by absolute paths 
-	open docs\index.html | str replace --all `href="/` `href="./` | str replace --all `from '/` `from './` | str replace --all `'/heck_playground` `'./heck_playground` | save docs\index.html --force  
+	open docs\index.html | str replace --all `href="/` `href="./` | str replace --all `from '/` `from './` | str replace --all `init('/` `'init('./` | save docs\index.html --force  
 
 clean:
 	cargo clean
