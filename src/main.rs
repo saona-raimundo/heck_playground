@@ -149,9 +149,25 @@ fn App() -> impl IntoView {
         </div>
         {description}
 
-		<footer id="footer" name="footnote">
-			<p>{"Source code: "}<a href="https://github.com/saona-raimundo/heck_playground">{"GitHub"}</a></p>
-			<p>{"Author: "}<a href="https://saona-raimundo.github.io/">{"Raimundo Saona"}</a></p>
-		</footer>
+        <footer>
+            <p>{"Source code: "}<a href="https://github.com/saona-raimundo/heck_playground">{"GitHub"}</a></p>
+            <p>
+                "Lisence: " 
+                <a rel="lisence" href="https://creativecommons.org/publicdomain/zero/1.0/">
+                    <img alt="Creative Commons Licence"
+                        style="border-width:0"
+                        src="https://i.creativecommons.org/l/by/4.0/80x15.png"/>
+                </a>
+                <a rel="lisence" href="https://creativecommons.org/publicdomain/zero/1.0/">
+                    {"CC0 1.0 Universal"}
+                </a>
+            </p>
+            <address>
+                {"Author: 🧑🏼‍💻"}
+                <a href="href=https://saona-raimundo.github.io/">
+                    {"Raimundo Saona"}
+                </a>
+            </address>
+        </footer>
     }
 }
