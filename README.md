@@ -13,3 +13,7 @@
 - `dist` is the target of trunk
 - `assets` is the files for the website
 - `src` is the rust source code
+
+## Similar websites
+
+- [capitalizemytitle](https://capitalizemytitle.com/)
